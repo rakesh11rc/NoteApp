@@ -1,0 +1,4 @@
+org/myprojects/noteapp/service/NoteServiceTest.class
+org/myprojects/noteapp/controller/NotebookControllerTest.class
+org/myprojects/noteapp/controller/NoteControllerTest.class
+org/myprojects/noteapp/service/NotebookServiceTest.class

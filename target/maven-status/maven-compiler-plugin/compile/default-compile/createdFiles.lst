@@ -1,0 +1,9 @@
+org/myprojects/noteapp/model/Note.class
+org/myprojects/noteapp/service/NoteService.class
+org/myprojects/noteapp/model/Notebook$NotebookBuilder.class
+org/myprojects/noteapp/model/Notebook.class
+org/myprojects/noteapp/service/NotebookService.class
+org/myprojects/noteapp/model/Note$NoteBuilder.class
+org/myprojects/noteapp/NoteApp.class
+org/myprojects/noteapp/controller/NotebookController.class
+org/myprojects/noteapp/controller/NoteController.class
