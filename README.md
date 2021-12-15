@@ -10,10 +10,10 @@ docker-compose up
 #### Get all notebooks (GET)
 * http://localhost:8080/v1/notebook
 
-####Get a notebook (GET)
+#### Get a notebook (GET)
 * http://localhost:8080/v1/notebook/{id}
 
-####Get a notebook with tags filter (GET)
+#### Get a notebook with tags filter (GET)
 ##### Example: http://localhost:8080/v1/notebook/abcde/tag1,tag2
 * http://localhost:8080/v1/notebook/{id}/tags
 
@@ -27,7 +27,7 @@ docker-compose up
 ##### {ïd": "xxxx", title": "newTitle", "notes": \[{..},{..}]}
 * http://localhost:8080/v1/notebook
 
-####Delete a notebook (DELETE)
+#### Delete a notebook (DELETE)
 * http://localhost:8080/v1/notebook/{id}
 
 ###Note
