@@ -17,28 +17,28 @@ public class NotebookController {
     @Autowired
     private NotebookService noteService;
 
-    @GetMapping
+    @GetMapping(produces = MediaType.APPLICATION_JSON_VALUE)
     public List<Notebook> getAll() {
         return noteService.getAllNotebook();
     }
 
-    @GetMapping("{id}")
+    @GetMapping(value = "{id}", produces = MediaType.APPLICATION_JSON_VALUE)
     public Notebook get(@PathVariable("id") String id) {
         return noteService.getNotebook(id);
     }
 
-    @GetMapping("{id}/{tags}")
+    @GetMapping(value = "{id}/{tags}", produces = MediaType.APPLICATION_JSON_VALUE)
     public Notebook getWithTags(@PathVariable("id") String id, @PathVariable("tags") List<String> tags) {
         return noteService.filterAndGetNotebook(id, tags);
     }
 
-    @PostMapping(consumes = MediaType.APPLICATION_JSON_VALUE)
+    @PostMapping(consumes = MediaType.APPLICATION_JSON_VALUE, produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<Notebook> create(@RequestBody Notebook notebook) {
         noteService.createNotebook(notebook);
         return new ResponseEntity<>(notebook, HttpStatus.CREATED);
     }
 
-    @PutMapping(consumes = MediaType.APPLICATION_JSON_VALUE)
+    @PutMapping(consumes = MediaType.APPLICATION_JSON_VALUE, produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<Notebook> update(@RequestBody Notebook notebook) {
         noteService.updateNotebook(notebook);
         return new ResponseEntity<>(notebook, HttpStatus.CREATED);
