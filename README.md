@@ -3,9 +3,9 @@
 ## Running the app: go into the project folder and execute the below command
 docker-compose up
 
-##Endpoints
+## Endpoints
 
-###NoteBook
+### NoteBook
 
 #### Get all notebooks (GET)
 * http://localhost:8080/v1/notebook
