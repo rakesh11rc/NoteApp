@@ -41,7 +41,7 @@ public class NotebookController {
     @PutMapping(consumes = MediaType.APPLICATION_JSON_VALUE, produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<Notebook> update(@RequestBody Notebook notebook) {
         noteService.updateNotebook(notebook);
-        return new ResponseEntity<>(notebook, HttpStatus.CREATED);
+        return new ResponseEntity<>(notebook, HttpStatus.OK);
     }
 
     @DeleteMapping("{id}")
